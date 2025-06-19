@@ -1,0 +1,60 @@
+:host ::ng-deep {
+    .dock-demo>.dock-window {
+        margin: 0;
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        background-image: url('https://primefaces.org/cdn/primevue/images/dock/window.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .dock-demo {
+        padding: 0;
+        border-radius: 0;
+    }
+    .p-menubar{
+        background-color: rgba(0, 0, 0, 0.436);
+        border: none;
+        border-radius: 40px;
+        width: 90%;
+        margin: 0 auto;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1000;
+    }
+    .p-menubar-button{
+        color: var(--text-color);
+        font-size: 1.2rem;
+        font-family: var(--font-family);
+        padding: 0.5rem 1rem;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--text-color);
+        }
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+        }
+        &:active {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+}
+
+.dark-tooltip {
+    .p-tooltip {
+        .p-tooltip-arrow {
+            border-top-color: var(--surface-900);
+        }
+
+        .p-tooltip-text {
+            background-color: var(--surface-900);
+        }
+    }
+}
